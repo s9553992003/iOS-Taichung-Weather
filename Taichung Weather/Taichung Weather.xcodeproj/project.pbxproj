@@ -13,6 +13,7 @@
 		6BB185A21C4E2A3F00B31185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB185A01C4E2A3F00B31185 /* Main.storyboard */; };
 		6BB185A41C4E2A3F00B31185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB185A31C4E2A3F00B31185 /* Assets.xcassets */; };
 		6BB185A71C4E2A3F00B31185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB185A51C4E2A3F00B31185 /* LaunchScreen.storyboard */; };
+		6BD935CB1C4E2FD2000E66F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6BD935CA1C4E2FD2000E66F6 /* .gitignore */; };
 		DB8262EDFC06D48F9B7FEDC3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CA7AFFF70CF12BC8289087 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		6BB185A31C4E2A3F00B31185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BB185A61C4E2A3F00B31185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BB185A81C4E2A3F00B31185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD935CA1C4E2FD2000E66F6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		87CA7AFFF70CF12BC8289087 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD2E543DA4FC44ACDDCA95B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +58,7 @@
 		6BB1858B1C4E2A3F00B31185 = {
 			isa = PBXGroup;
 			children = (
+				6BD935CA1C4E2FD2000E66F6 /* .gitignore */,
 				6BB185961C4E2A3F00B31185 /* Taichung Weather */,
 				6BB185951C4E2A3F00B31185 /* Products */,
 				06766FF0ECFE4FA66829F2E1 /* Pods */,
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD935CB1C4E2FD2000E66F6 /* .gitignore in Resources */,
 				6BB185A71C4E2A3F00B31185 /* LaunchScreen.storyboard in Resources */,
 				6BB185A41C4E2A3F00B31185 /* Assets.xcassets in Resources */,
 				6BB185A21C4E2A3F00B31185 /* Main.storyboard in Resources */,
