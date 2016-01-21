@@ -14,7 +14,7 @@
 
 static const NSInteger numberOfSection = 2;
 static const NSInteger hightForCurrentRow = 90;
-static const NSInteger numberOfRowInWeekSection = 5;
+static const NSInteger numberOfDayInWeekSection = 5;
 
 @implementation MainTableViewController
 
@@ -28,7 +28,6 @@ static const NSInteger numberOfRowInWeekSection = 5;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -144,35 +143,12 @@ canEditRowAtIndexPath:(NSIndexPath *)indexPath {
 - (void)tableView:(UITableView *)tableView
 commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
-    //判斷編輯表格的類型為「刪除」
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSLog(@"index : %d", indexPath.row);
-        //刪除對應的陣列元素
         [self.weekdayArray removeObjectAtIndex:indexPath.row];
         [self.weekDateArray removeObjectAtIndex:indexPath.row];
         [self.weekHighTempArray removeObjectAtIndex:indexPath.row];
         [self.weekLowTempArray removeObjectAtIndex:indexPath.row];
         [self.weekTextArray removeObjectAtIndex:indexPath.row];
-        
-        for (int i = 0; i < [self.weekdayArray count]; i++) {
-            NSLog(@"%d = %@", i, [self.weekdayArray objectAtIndex:i]);
-        }
-        //刪除對應的表格項目
-        //[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-        // withRowAnimation:UITableViewRowAnimationRight];
-        
-        //如果該分類已沒有任何項目則刪除整個分類
-        /*if ([[self.weekdayArray objectAtIndex:indexPath.section] count] == 0) {
-         [self.weekdayArray removeObjectAtIndex:indexPath.section];
-         [self.weekDateArray removeObjectAtIndex:indexPath.section];
-         [self.weekHighTempArray removeObjectAtIndex:indexPath.section];
-         [self.weekLowTempArray removeObjectAtIndex:indexPath.section];
-         [self.weekTextArray removeObjectAtIndex:indexPath.section];
-         
-         [tableView deleteSections:[NSIndexSet
-         indexSetWithIndex:indexPath.section]
-         withRowAnimation:UITableViewRowAnimationFade];
-         }*/
     }
     [tableView reloadData];
 }
@@ -219,7 +195,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (void)getWeekWeather:(NSDictionary *)response {
-    for (int i = 0; i < numberOfRowInWeekSection; i++) {
+    for (int i = 0; i < numberOfDayInWeekSection; i++) {
         [self.weekdayArray
          addObject:[[response valueForKey:@"forecast"][i] objectForKey:@"day"]];
         [self.weekDateArray
@@ -242,69 +218,5 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.weekTextArray removeAllObjects];
     [self updateWeatherFromServer];
 }
-/*
- - (UITableViewCell *)tableView:(UITableView *)tableView
- cellForRowAtIndexPath:(NSIndexPath *)indexPath {
- UITableViewCell *cell = [tableView
- dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#>
- forIndexPath:indexPath];
- 
- // Configure the cell...
- 
- return cell;
- }
- */
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath
- *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView
- commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
- forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath]
- withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the
- array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath
- *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath
- *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little
- preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
