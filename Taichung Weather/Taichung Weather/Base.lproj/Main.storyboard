@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Taichung Weather-->
         <scene sceneID="1i7-cY-H2Z">
             <objects>
                 <tableViewController id="XJw-om-OfT" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                             <outlet property="delegate" destination="XJw-om-OfT" id="tuI-v0-07N"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="YrC-hW-QDi"/>
+                    <navigationItem key="navigationItem" title="Taichung Weather" id="YrC-hW-QDi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQM-hw-ASb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

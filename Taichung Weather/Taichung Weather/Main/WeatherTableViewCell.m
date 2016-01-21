@@ -27,8 +27,9 @@
                      andText:(NSString *)text {
     self.labelWeekday.text = weekday;
     self.labelHighTemp.text =
-    [NSString stringWithFormat:@"%@%@", highTemp, @"°F"];
-    self.labelLowTemp.text = [NSString stringWithFormat:@"%@%@", lowTemp, @"°F"];
+    [NSString stringWithFormat:@"%@%@%@", @"High:", highTemp, @"°F"];
+    self.labelLowTemp.text =
+    [NSString stringWithFormat:@"%@%@%@", @"Low :", lowTemp, @"°F"];
     self.labelDate.text = date;
     self.labelText.text = text;
 }
