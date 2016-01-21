@@ -16,8 +16,21 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
+}
+
+- (void)updateCurrentWeather:(NSString *)weekday
+                 andHighTemp:(NSString *)highTemp
+                  andLowTemp:(NSString *)lowTemp
+                     andDate:(NSString *)date
+                     andText:(NSString *)text {
+    self.labelWeekday.text = weekday;
+    self.labelHighTemp.text =
+    [NSString stringWithFormat:@"%@%@", highTemp, @"°F"];
+    self.labelLowTemp.text = [NSString stringWithFormat:@"%@%@", lowTemp, @"°F"];
+    self.labelDate.text = date;
+    self.labelText.text = text;
 }
 
 @end

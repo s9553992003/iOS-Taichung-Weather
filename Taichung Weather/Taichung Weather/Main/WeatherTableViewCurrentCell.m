@@ -16,14 +16,15 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 
-
-- (void)updateCurrentWeather:(NSString *)time andTemp:(NSString *)temp andText:(NSString *)text{
+- (void)updateCurrentWeather:(NSString *)time
+                     andTemp:(NSString *)temp
+                     andText:(NSString *)text {
     self.labelTime.text = time;
-    self.labelTemp.text = temp;
+    self.labelTemp.text = [NSString stringWithFormat:@"%@%@", temp, @"°F"];
     self.labelText.text = text;
 }
 @end
