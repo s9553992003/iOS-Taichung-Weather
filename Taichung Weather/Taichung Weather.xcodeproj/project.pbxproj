@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BA4E31A1C4FCEE400E2873C /* WeatherTableViewCurrentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA4E3181C4FCEE400E2873C /* WeatherTableViewCurrentCell.m */; };
+		6BA4E31B1C4FCEE400E2873C /* WeatherTableViewCurrentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA4E3191C4FCEE400E2873C /* WeatherTableViewCurrentCell.xib */; };
 		6BB185991C4E2A3F00B31185 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB185981C4E2A3F00B31185 /* main.m */; };
 		6BB1859C1C4E2A3F00B31185 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB1859B1C4E2A3F00B31185 /* AppDelegate.m */; };
 		6BB1859F1C4E2A3F00B31185 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB1859E1C4E2A3F00B31185 /* ViewController.m */; };
 		6BB185A21C4E2A3F00B31185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB185A01C4E2A3F00B31185 /* Main.storyboard */; };
 		6BB185A41C4E2A3F00B31185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB185A31C4E2A3F00B31185 /* Assets.xcassets */; };
 		6BB185A71C4E2A3F00B31185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB185A51C4E2A3F00B31185 /* LaunchScreen.storyboard */; };
+		6BD5F7F91C4E39E8007C3FE8 /* WeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5F7F71C4E39E8007C3FE8 /* WeatherTableViewCell.m */; };
+		6BD5F7FA1C4E39E8007C3FE8 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5F7F81C4E39E8007C3FE8 /* WeatherTableViewCell.xib */; };
 		6BD935CB1C4E2FD2000E66F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6BD935CA1C4E2FD2000E66F6 /* .gitignore */; };
+		6BE92D091C4E35E9002E1C26 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE92D081C4E35E9002E1C26 /* MainTableViewController.m */; };
 		DB8262EDFC06D48F9B7FEDC3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CA7AFFF70CF12BC8289087 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55D1FB5A3795C74E22CCE9B5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6BA4E3171C4FCEE400E2873C /* WeatherTableViewCurrentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTableViewCurrentCell.h; sourceTree = "<group>"; };
+		6BA4E3181C4FCEE400E2873C /* WeatherTableViewCurrentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTableViewCurrentCell.m; sourceTree = "<group>"; };
+		6BA4E3191C4FCEE400E2873C /* WeatherTableViewCurrentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTableViewCurrentCell.xib; sourceTree = "<group>"; };
 		6BB185941C4E2A3F00B31185 /* Taichung Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taichung Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB185981C4E2A3F00B31185 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BB1859A1C4E2A3F00B31185 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,7 +37,12 @@
 		6BB185A31C4E2A3F00B31185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BB185A61C4E2A3F00B31185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BB185A81C4E2A3F00B31185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD5F7F61C4E39E8007C3FE8 /* WeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTableViewCell.h; sourceTree = "<group>"; };
+		6BD5F7F71C4E39E8007C3FE8 /* WeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTableViewCell.m; sourceTree = "<group>"; };
+		6BD5F7F81C4E39E8007C3FE8 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		6BD935CA1C4E2FD2000E66F6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6BE92D071C4E35E9002E1C26 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		6BE92D081C4E35E9002E1C26 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		87CA7AFFF70CF12BC8289087 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD2E543DA4FC44ACDDCA95B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,11 +71,11 @@
 		6BB1858B1C4E2A3F00B31185 = {
 			isa = PBXGroup;
 			children = (
-				6BD935CA1C4E2FD2000E66F6 /* .gitignore */,
 				6BB185961C4E2A3F00B31185 /* Taichung Weather */,
 				6BB185951C4E2A3F00B31185 /* Products */,
 				06766FF0ECFE4FA66829F2E1 /* Pods */,
 				91A5B1E328AA4D8FD2C1DF89 /* Frameworks */,
+				6BD935CA1C4E2FD2000E66F6 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +90,7 @@
 		6BB185961C4E2A3F00B31185 /* Taichung Weather */ = {
 			isa = PBXGroup;
 			children = (
+				6BE92D061C4E35D8002E1C26 /* Main */,
 				6BB1859A1C4E2A3F00B31185 /* AppDelegate.h */,
 				6BB1859B1C4E2A3F00B31185 /* AppDelegate.m */,
 				6BB1859D1C4E2A3F00B31185 /* ViewController.h */,
@@ -96,6 +110,21 @@
 				6BB185981C4E2A3F00B31185 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BE92D061C4E35D8002E1C26 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6BE92D071C4E35E9002E1C26 /* MainTableViewController.h */,
+				6BE92D081C4E35E9002E1C26 /* MainTableViewController.m */,
+				6BA4E3171C4FCEE400E2873C /* WeatherTableViewCurrentCell.h */,
+				6BA4E3181C4FCEE400E2873C /* WeatherTableViewCurrentCell.m */,
+				6BA4E3191C4FCEE400E2873C /* WeatherTableViewCurrentCell.xib */,
+				6BD5F7F61C4E39E8007C3FE8 /* WeatherTableViewCell.h */,
+				6BD5F7F71C4E39E8007C3FE8 /* WeatherTableViewCell.m */,
+				6BD5F7F81C4E39E8007C3FE8 /* WeatherTableViewCell.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		91A5B1E328AA4D8FD2C1DF89 /* Frameworks */ = {
@@ -168,7 +197,9 @@
 			files = (
 				6BD935CB1C4E2FD2000E66F6 /* .gitignore in Resources */,
 				6BB185A71C4E2A3F00B31185 /* LaunchScreen.storyboard in Resources */,
+				6BD5F7FA1C4E39E8007C3FE8 /* WeatherTableViewCell.xib in Resources */,
 				6BB185A41C4E2A3F00B31185 /* Assets.xcassets in Resources */,
+				6BA4E31B1C4FCEE400E2873C /* WeatherTableViewCurrentCell.xib in Resources */,
 				6BB185A21C4E2A3F00B31185 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,8 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD5F7F91C4E39E8007C3FE8 /* WeatherTableViewCell.m in Sources */,
+				6BE92D091C4E35E9002E1C26 /* MainTableViewController.m in Sources */,
 				6BB1859F1C4E2A3F00B31185 /* ViewController.m in Sources */,
 				6BB1859C1C4E2A3F00B31185 /* AppDelegate.m in Sources */,
+				6BA4E31A1C4FCEE400E2873C /* WeatherTableViewCurrentCell.m in Sources */,
 				6BB185991C4E2A3F00B31185 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
